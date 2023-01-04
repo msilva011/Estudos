@@ -1,0 +1,33 @@
+.img-class{
+  width: 600px;
+ 
+}
+
+.text-class{
+  font-size: 16px;
+  text-align: justify;
+}
+
+@media (min-width: 426px) and (max-width: 1040px){
+  .img-class{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .text-class{
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 425px){
+  .img-class{
+    width: 100%;
+    height: auto;
+  }
+  .text-class{
+    font-size: 14px;
+    text-align: justify;
+  }
+}

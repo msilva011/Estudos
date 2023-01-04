@@ -1,0 +1,28 @@
+*{ /*seleciona todos os elementos da pagina*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box{
+  background-color: darkgray;
+  min-height: 100vh;
+  display: flex; /*display propriedade de como itens serão organizados e escolho o tipo flex (msm coisa que flexbox)*/
+  flex-direction: row; /*força um direcionamento ao flex. Default vem em linha*/
+  gap: 15px; /*espaçamento entre itens. pode-se passar 2 parametros: 1º em coluna 2ª linha*/
+  justify-content: center;/*alinhamento horizontal do flex*/
+  align-items: center;/*alinhamento vertical do flex*/
+  flex-wrap: wrap;/*quebra itens (responsividade)*/
+}
+
+.item{
+  min-width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  background-color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpaceX</title>
+  </head>
+  <body>
+    <div>
+      <header>
+        <a href="./index.html"
+          ><img
+            src="logo.png"
+            alt="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/SpaceX-Logo.svg/2560px-SpaceX-Logo.svg.png"
+        /></a>
+        <a href="./ships.html">The SpaceShips |</a>
+        <a href="./hire.html"> Hire Us</a>
+        <hr />
+      </header>
+    </div>
+
+    <div>
+      <h3>Hire Us Now</h3>
+      <p>
+        It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged
+      </p>
+
+      <form action="job">
+        <label for="name">Nome: </label>
+        <input type="text" id="name" required />
+        <label for="email"> - Email: </label>
+        <input type="email" id="email" required /><br /><br />
+        <label for="speceship">SpaceShips: </label>
+        <select name="nave" id="nave">
+          <optgroup>
+            <option value="">Nave Select</option>
+            <option value="falcon9">Falcon 09</option>
+            <option value="falconheavy">Falcon Heavy</option>
+          </optgroup>
+        </select>
+        <label for="typeservice"> | Type Service: </label>
+        <input type="search" id="typeservice" list="services" />
+        <datalist id="services">
+          <option value="lorem">Lorem</option>
+          <option value="ipsum">Ipsum</option>
+          <option value="simply">Simply</option></datalist
+        ><br /><br /><br />
+
+        <input type="submit" id="send" value="Send Form" />
+      </form>
+    </div>
+  </body>
+</html>

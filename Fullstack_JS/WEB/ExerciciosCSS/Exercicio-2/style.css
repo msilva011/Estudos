@@ -1,0 +1,41 @@
+body{
+  background-color: white;
+  margin: 0px;
+  padding: 0;
+}
+
+.post-container{
+  width: 65%;
+  margin: 0 auto 0 auto;
+  background-color: #fffafa;
+  margin-top: 0%;
+  padding-bottom: 0;
+  font-style: justify;
+
+}
+
+.post{
+  padding: 0 100px 0px 50px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+h1{
+  font-family: 'Montserrat', 'sans-serif';
+}
+
+.date{
+  font-family: 'Roboto', 'sans-serif';
+  color: #008080;
+  font-weight: 600;
+}
+
+.post-content{
+  font-family: 'Open Sans','sans-serif';
+  font-size: small;
+}
+
+#final-post{
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
