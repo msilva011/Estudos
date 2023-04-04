@@ -1,0 +1,8 @@
+public abrirConta (t)
+  tipo = t;
+  status = true;
+
+  se t == cc entao
+    setSaldo(50)
+  se t == cp entao
+    setSaldo(150)
