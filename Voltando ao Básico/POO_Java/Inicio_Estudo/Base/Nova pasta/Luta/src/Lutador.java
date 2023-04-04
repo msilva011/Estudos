@@ -89,7 +89,7 @@ public class Lutador{
   }
   /******************metodos******************/
   public void apresentar(){
-    System.out.println("--------Apresentação--------");
+    System.out.println("\n--------Apresentação--------\n");
     System.out.println("Lutador: "+this.getNome() + 
     "\nNacionalidade: " + this.getNacionalidade() + 
     "\nIdade: " + this.getIdade() + 
@@ -100,7 +100,7 @@ public class Lutador{
     "\nDerrotas: " + this.getDerrotas());
   }
   public void status(){
-    System.out.println("----------------Status-------------");
+    System.out.println("\n----------------Status-------------\n");
     System.out.println("Nome: " + this.getNome() + ", é um peso "+this.getCategoria()+", possui "+this.getVitorias()+" vitórias, "+this.getEmpates()+" empates, "+this.getDerrotas()+" derrotas.");
   }
   public void ganharLuta(){

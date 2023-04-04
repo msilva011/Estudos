@@ -20,5 +20,9 @@ public class App {
         l[5] = new Lutador("Pedro","Brasil",30, 1.92f, 
                         105.9f,15,4,3);
 
+
+        Luta lt01 = new Luta();
+        lt01.marcarLuta(l[2], l[5]);
+        lt01.lutar();
     }
 }

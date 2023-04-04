@@ -12,31 +12,41 @@ public class Luta {
         this.setAprovada(true);
         this.setDesafiado(l1);
         this.setDesafiante(l2);
+        System.out.println("----------Luta marcada com sucesso------------");
       }
     }else{
       this.setAprovada(false);
       this.setDesafiado(null);
       this.setDesafiante(null);
-      System.out.println("Luta nao pode ser marcada");
+      System.out.println("xxxxxxx Luta nao pode ser marcada xxxxxxxxx");
     }
   }
   public void lutar(){
     if(this.isAprovada()){
+      desafiado.status();
+      desafiante.status();
       Random random = new Random();
       int vencedor = random.nextInt(3);
+      System.out.println("\nSorteado= "+vencedor);
       switch (vencedor){
         case 0:
         desafiado.setEmpates(desafiado.getEmpates() + 1);
         desafiante.setEmpates(desafiante.getEmpates() + 1);
+        System.out.println("\n**** Empate ****");
+        break;
         case 1:
         desafiado.setVitorias(desafiado.getVitorias()+1);
         desafiante.setDerrotas(desafiante.getDerrotas()+1);
+        System.out.println("\n**** Desafiado venceu " + desafiado.getNome() + "********");
+        break;
         case 2:
         desafiado.setDerrotas(desafiado.getDerrotas()+1);
         desafiante.setVitorias(desafiante.getVitorias()+1);
+        System.out.println("\n******* Desafiante venceu " + desafiante.getNome() + " ********");
+        break;
       }
     }else{
-      System.out.println("Luta nao pode acontecer");
+      System.out.println("xxxxxxxxxx Luta nao pode acontecer xxxxxxxxx");
     }
   }
   public Lutador getDesafiado() {
