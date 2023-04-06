@@ -1,0 +1,3 @@
+class Technician extends Student{
+
+}

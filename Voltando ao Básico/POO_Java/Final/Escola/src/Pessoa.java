@@ -2,11 +2,6 @@ class Pessoa{
   private String nome;
   private int idade;
   private char sexo;
-  
-
-  public void fazerAniver(){
-    this.setIdade(this.getIdade()+1);
-  }
 
   public String getNome() {
     return nome;
@@ -36,5 +31,5 @@ class Pessoa{
   public String toString() {
     return "Pessoa [nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + "]";
   }
-
+  
 }

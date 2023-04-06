@@ -1,0 +1,3 @@
+class Visitor extends People {
+  
+}
