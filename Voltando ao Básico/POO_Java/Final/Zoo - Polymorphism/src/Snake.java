@@ -1,0 +1,3 @@
+class Snake extends Reptile {
+  
+}

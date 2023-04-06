@@ -1,0 +1,3 @@
+class Goldfish extends Fish{
+  
+}
