@@ -30,6 +30,4 @@ abstract class Animal{
     return "\n^^^^^^^^^^^^^^^^\nAnimal [weight=" + weight + ", age=" + age + ", member=" + member + "]\n--------------------\n";
   }
 
-  
-  
 }
