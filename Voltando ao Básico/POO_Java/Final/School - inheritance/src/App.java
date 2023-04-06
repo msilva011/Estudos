@@ -19,6 +19,5 @@ public class App {
         System.out.println(p2.toString());
         System.out.println(p3.toString());
         System.out.println(p4.toString());
-
     }
 }
