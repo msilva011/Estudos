@@ -1,0 +1,28 @@
+package exercicios01;
+
+import java.util.Scanner;
+
+public class Mmc {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println("Digite sua altura: ");
+		double altura = scan.nextDouble();
+		System.out.println("Voce é homem ou mulher? h ou m");
+		String gener = scan.next();
+		
+		if(gener.equals("h")) {
+			double mmcH = (72.7 * altura)-58; //homem
+			System.out.println("Seu peso ideal é como homem: " + mmcH);
+
+		}else {
+			double mmcM = (62.1 * altura)-44.7; //mulher
+			System.out.println("Seu peso ideal é como mulher: " + mmcM);
+
+		}
+		
+	}
+
+}

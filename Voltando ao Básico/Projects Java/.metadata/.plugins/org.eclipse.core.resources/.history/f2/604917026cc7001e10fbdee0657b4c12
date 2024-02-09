@@ -1,0 +1,10 @@
+package aula16_Exercicios;
+
+public class Validacao_Cadastro {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

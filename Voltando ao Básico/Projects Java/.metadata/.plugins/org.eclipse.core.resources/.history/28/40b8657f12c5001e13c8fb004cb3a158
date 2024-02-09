@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Gener {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("QUal seu genero? M ou F");
+		String gener = scan.next();
+		
+		switch(gener) {
+		case "M":
+			System.out.println("Masculino");
+			break;
+		case "F":
+			System.out.println("Feminino");
+		}
+	}
+
+}

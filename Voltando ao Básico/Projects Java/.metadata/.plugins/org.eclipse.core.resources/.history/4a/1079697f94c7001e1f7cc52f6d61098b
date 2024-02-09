@@ -1,0 +1,32 @@
+package aula16_Exercicios;
+import java.util.Scanner;
+public class Primo {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int value, i;
+		boolean primo;
+		
+		System.out.println("Digite um numero e descubra se é primo: ");
+		value = scan.nextInt();
+		primo = false;
+		if(value%2 !=0 && value%3 != 0) {
+			primo = true;
+			System.out.println("É Primo!!");
+			
+			System.out.println("\nE de 1 a "+value+" esses são os primos:");
+			for(i=2; i<= Math.sqrt(value);i++) {
+				
+				if(value%i != 0) {
+					primo=true;
+					System.out.println(i);
+				}
+			}
+		}else {
+			primo = false;
+			System.out.println("Não é Primo");
+		}
+		
+	}
+
+}

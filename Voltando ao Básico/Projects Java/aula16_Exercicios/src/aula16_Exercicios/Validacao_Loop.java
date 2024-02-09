@@ -1,0 +1,19 @@
+package aula16_Exercicios;
+
+import java.util.Scanner;
+public class Validacao_Loop {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Digite sua nota: ");	
+		double nota = scan.nextDouble();
+		
+		while(nota < 0 || nota > 10) {
+			System.out.println("Nota inválida.\n Digite sua nota de 1 a 10: ");
+			nota = scan.nextDouble();
+		}
+		System.out.println("NOta validada!!");
+	}
+
+}

@@ -1,0 +1,17 @@
+package scanner_Pratico;
+
+import java.util.Scanner;
+
+public class testeScanner {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Digite sua cidade: ");
+		String cidade = scan.nextLine();
+		System.out.println("Sua cidade é: " + cidade);
+
+	}
+
+}

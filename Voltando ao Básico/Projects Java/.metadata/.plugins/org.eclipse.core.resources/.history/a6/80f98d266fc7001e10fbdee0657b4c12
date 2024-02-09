@@ -1,0 +1,29 @@
+package aula16_Exercicios;
+import java.util.Scanner;
+public class Validacao_Cadastro {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		boolean valid = false;
+		String name;
+		String civil;
+		String gener;
+		int idade;
+		double salario;
+		
+		do {			
+			System.out.println("\n***Digite sua informações***\n");
+			
+			System.out.println("Nome: ");
+			name = scan.next();
+			if(name.length()>=3) {
+				valid= true;
+				System.out.println("Nome invalido");
+			}else {
+				valid = false;
+			}
+		}while(!valid);
+	}
+
+}

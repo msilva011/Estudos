@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class MediaAluno {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Qual sua nota do primeiro semestre? ");
+		double nota1 = scan.nextDouble();
+		System.out.println("Qual sua nota do segundo semestre? ");
+		double nota2 = scan.nextDouble();
+		
+		double media = (nota1 + nota2)/2;
+		char conceito = 0;
+		
+		if(media >= 9.0 && media >= 10) {
+			//A
+			 conceito = 'A';
+		}else if(media >=7.5 && media <9.0) {
+			//B
+			 conceito = 'B';
+		}else if(media >=6.0 && media < 7.5) {
+			//C
+			 conceito = 'C';
+		}else if(media >=4.0 && media < 6.0) {
+			//D
+			 conceito = 'D';
+		}else if(media >= 0 && media< 4.0 ) {
+			//E
+			 conceito = 'E';
+		}else {
+			System.out.println("Nota 1 ou 2 inválida!");
+		}
+		
+		switch(conceito) {
+		case 'A':
+		case 'B':
+		case 'C':
+			System.out.println("APROVADO \n "+ conceito);
+			break;
+		case 'D':
+		case 'E':
+			System.out.println("REPROVADO \n "+ conceito);
+			break;
+		}
+	}
+
+}

@@ -1,0 +1,43 @@
+import java.util.Scanner;	
+public class ReajusteSal {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(SYtem.in);
+		
+		System.out.println("Digite o salario do colaborador: ");
+		double salario = scan.nextDouble();
+		double reajuste;
+		double aumento;
+		double valorAtual;
+		
+		if(salario <=280.0) {
+			 reajuste = 0.2;
+			 aumento = salario * reajuste;
+			 valorAtual = salario*0.8;
+			
+		}else if(salario >280.0 && salario <= 700.0) {
+			 reajuste = 0.15;
+			 aumento = salario * reajuste;
+			 valorAtual = salario * 0.85;
+			
+		}else if(salario > 700.0 && salario <= 1500.0) {
+			 reajuste = 0.10;
+			 aumento = salario * reajuste;
+			 valorAtual = salario * 0.9;
+			
+		}else if(salario >1500.0) {
+			 reajuste = 0.05;
+			 aumento = salario * reajuste;
+			 valorAtual = salario * 0.95;
+			
+		}else {
+			System.out.println("Salario invalido!");
+		}
+		
+		System.out.println("______________________________");
+		System.out.println("O salario era: "+ salario);
+		System.out.println("O reajuste é de "+ reajuste * 100+"%. O aumento foi "+aumento);
+		System.out.println("O salario atualizado passa a ser: "+ valorAtual);
+	}
+
+}

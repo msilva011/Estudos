@@ -1,0 +1,20 @@
+package exercicios01;
+
+import java.util.Scanner;
+
+public class RaioCirc {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in)
+				;
+		System.out.println("Digite o valor do raio: ");
+		double raio = scan.nextDouble();
+		
+		double areaCircle = (3.14 * raio*raio);
+		
+		System.out.println("Area do circulo do perímetro digitado é: " + areaCircle);
+		
+	}
+
+}

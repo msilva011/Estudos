@@ -1,0 +1,18 @@
+package aula16_Exercicios;
+
+public class Loop_While {
+
+	public static void main(String[] args) {
+		int i = 0;
+		int max = 10;
+		
+		
+		System.out.println("Iniciando contagem até "+max);
+		while(i<max) {
+			i++;
+			System.out.println("\n"+i);
+		}
+
+	}
+
+}

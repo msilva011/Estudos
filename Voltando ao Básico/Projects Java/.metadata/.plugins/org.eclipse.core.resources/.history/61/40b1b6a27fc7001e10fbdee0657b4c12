@@ -1,0 +1,18 @@
+package aula16_Exercicios;
+
+public class Fibonacci {
+
+	public static void main(String[] args) {
+		
+		int i,value=1, valueAnt=0, result=0;
+		
+		for(i=1 ; i<=10; i++) {
+			result = valueAnt + value;
+			valueAnt = value;
+			System.out.println(""+result+"-");
+
+		}
+		
+	}
+
+}

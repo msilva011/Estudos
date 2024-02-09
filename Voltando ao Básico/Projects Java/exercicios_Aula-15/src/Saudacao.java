@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class Saudacao {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Qual turno voce estuda: M- Matutino, V-Vespertino, N-Noturno");
+		String turno = scan.next();
+		
+		if(turno.equalsIgnoreCase("m")) {
+			System.out.println("Bom dia!");
+		}else if(turno.equalsIgnoreCase("V")) {
+			System.out.println("Boa tarde!");
+		}else if(turno.equalsIgnoreCase("N")) {
+			System.out.println("Boa noite!");
+		}else {
+			System.out.println("Turno invalido!");
+		}
+		
+		switch(turno) {
+			case "m":
+				System.out.println("Bom dia!!");
+				break;
+			case "v":
+				System.out.println("Boa tarde!!");
+				break;
+			case "n":
+				System.out.println("Boa noite!!");
+				break;
+			case "M":
+				System.out.println("Bom dia!!");
+				break;
+			case "V":
+				System.out.println("Boa tarde!!");
+				break;
+			case "N":
+				System.out.println("Boa noite!!");
+				break;
+			default: System.out.println("Turno invalido!!");
+		}
+	}
+
+}

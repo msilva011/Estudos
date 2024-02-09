@@ -1,0 +1,44 @@
+package aula16_Exercicios;
+import java.util.Scanner;
+public class Validacao_Cadastro {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		String name;
+		int idade;
+		double salario;
+		String gener;
+		String civil;
+		
+		do {
+			System.out.println("\nNome: ");
+			name = scan.next();			
+		}while(name.length()>2);
+		do {
+			System.out.println("\nIdade: ");
+			idade = scan.nextInt();
+		}while(idade<0 || idade >150);
+		
+		do {
+			System.out.println("\nSalario: ");
+			salario = scan.nextDouble();
+			
+		}while(salario < 0);
+		do {
+			System.out.println("\nGenero: ");
+			gener = scan.next();
+			
+		}while(!gener.equalsIgnoreCase("f") || 
+				!gener.equalsIgnoreCase("m"));
+		do {
+			System.out.println("\nEstado Civil: ");
+			civil = scan.next();
+		}while(!civil.equalsIgnoreCase("s") || !civil.equalsIgnoreCase("c") ||
+				!civil.equalsIgnoreCase("v"));
+		
+		
+		System.out.println("CADASTRO REALIZADO COM SUCESSO!!!");
+	}
+
+}
