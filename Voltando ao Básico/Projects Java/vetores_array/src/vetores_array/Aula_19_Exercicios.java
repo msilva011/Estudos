@@ -10,14 +10,14 @@ public class Aula_19_Exercicios {
 		
 		int[] a = new int[value];
 		
-		int[] b = new int[value*2];
+		int[] b = new int[a.length*2];
 		
-		int[] c = new int[value];
+		int[] c = new int[a.length*3];
 
 		
 		System.out.println("O vetor A tem "+a.length+" posições e o vetor B tem "+b.length);
 		
-		for (int i=0; i<value;i++) {
+		for (int i=0; i<a.length;i++) {
 			a[i] = i+2;
 			System.out.println("\n---No vetor A---\nna posição "+i+" o valor é "+a[i]);
 			
