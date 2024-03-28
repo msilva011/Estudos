@@ -44,6 +44,8 @@ public class ContaCorrente {
 			System.out.println("\nSaque efetuado no valor: "+valor);
 			usaChequeEspecial();
 			consultarSaldo();
+		} else if(valor > (saldo+limit)) {
+			System.out.println("Você não possui saldo suficiente");
 		}
 	}
 	

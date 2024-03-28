@@ -13,7 +13,7 @@ public class Objeto_CC {
 		conta1.depositar(100.00);
 		conta1.sacarDinheiro(22.00);
 		conta1.dadosGerais();
-		conta1.sacarDinheiro(80.50);
+		conta1.sacarDinheiro(220.80);
 	}
 
 }
